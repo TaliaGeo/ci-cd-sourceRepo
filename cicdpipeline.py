@@ -8,7 +8,7 @@ REPO_NAME = "TaliaGeo/ci-cd-sourceRepo.git"
 BRANCH_NAME = "master"
 CHECK_INTERVAL = 3
 
-g = github.Github(GITHUB_TOKEN)
+g = Github(GITHUB_TOKEN)
 repo = g.get_repo(REPO_NAME)
 lates_commit = repo.get_branch(BRANCH_NAME).commit.sha
 
