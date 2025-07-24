@@ -4,7 +4,7 @@ import subprocess
 
 GITHUB_TOKEN = "hp_5T84OLnz9k6cpUqUqzubvTbLEc9RXL2GAEXy"
 
-REPO_NAME = "TaliaGeo/ci-cd-sourceRepo.git"
+REPO_NAME = "TaliaGeo/ci-cd-sourceRepo"
 BRANCH_NAME = "master"
 CHECK_INTERVAL = 3
 
