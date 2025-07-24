@@ -1,11 +1,11 @@
-from github import github
+from github import Github
 import time 
 import subprocess
 
 GITHUB_TOKEN = "hp_5T84OLnz9k6cpUqUqzubvTbLEc9RXL2GAEXy"
 
 REPO_NAME = "TaliaGeo/ci-cd-sourceRepo.git"
-BRANCH_NAME = "main"
+BRANCH_NAME = "master"
 CHECK_INTERVAL = 3
 
 g = github.Github(GITHUB_TOKEN)
