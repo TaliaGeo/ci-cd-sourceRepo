@@ -1,0 +1,51 @@
+ItemID,ItemType,ItemName,Quantity,Price
+1,Meat,Chicken,15,10.5 
+2,Vegetable,Broccoli,8,2.5 
+3,Meat,Beef,20,12 
+4,Spice,Black Pepper,5,1.5 
+5,Vegetable,Carrot,10,2 
+6,Spice,Cumin,3,1 
+7,Meat,Lamb,7,14 
+8,Vegetable,Spinach,25,3 
+9,Spice,Turmeric,4,1.8 
+10,Drink,Juice,40,3.5 
+11,Drink,Water,50,1 
+12,Meat,Turkey,13,11.5 
+13,Vegetable,Cauliflower,9,2.7 
+14,Spice,Oregano,6,1.4 
+15,Meat,Duck,8,13 
+16,Drink,Soda,45,2.5 
+17,Vegetable,Peas,12,2.2 
+18,Meat,Venison,5,15 
+19,Spice,Salt,30,1 
+20,Drink,Coffee,42,4.5 
+21,Vegetable,Potato,35,2 
+22,Meat,Rabbit,6,14.5 
+23,Spice,Paprika,7,1.6 
+24,Drink,Tea,38,3.8 
+25,Vegetable,Onion,28,1.8 
+26,Meat,Fish,18,10 
+27,Spice,Ginger,5,2.1 
+28,Drink,Milk,50,2 
+29,Vegetable,Tomato,32,2.5 
+30,Meat,Shrimp,12,13.5 
+31,Spice,Cilantro,8,1.3 
+32,Drink,Cocoa,40,5 
+33,Vegetable,Pepper,20,2.7 
+34,Meat,Salmon,14,12 
+35,Spice,Chili Powder,6,2 
+36,Drink,Apple Cider,25,4 
+37,Vegetable,Brussels Sprouts,15,2.9 
+38,Meat,Tuna,11,10.8 
+39,Spice,Basil,7,1.7 
+40,Drink,Orange Juice,28,3 
+41,Vegetable,Asparagus,14,3.5 
+42,Meat,Crab,10,14 
+43,Spice,Cardamom,5,2.5 
+44,Drink,Smoothie,45,3.5 
+45,Vegetable,Cucumber,30,2 
+46,Meat,Oyster,8,13.5 
+47,Spice,Coriander,6,1.9 
+48,Drink,Pomegranate Juice,30,4 
+49,Vegetable,Zucchini,25,2.5 
+50,Meat,Clams,10,12
