@@ -2,8 +2,10 @@ from github import Github
 import time 
 import subprocess
 import os
+from dotenv import load_dotenv
 
-GITHUB_TOKEN = "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"
+load_dotenv()
+token = os.getenv("GITHUB_TOKEN")
 
 REPO_NAME = "TaliaGeo/ci-cd-sourceRepo"
 BRANCH_NAME = "master"
@@ -24,4 +26,4 @@ while True:
         lates_commit = latest_commit
     else:
         print("No new commits detected.")
-        //hii
+     
