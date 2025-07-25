@@ -1,17 +1,20 @@
-from github import Github
+from github import Github, Auth
 import time 
 import subprocess
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
-token = os.getenv("GITHUB_TOKEN")
-
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+print("Loaded token:", GITHUB_TOKEN)
+if not GITHUB_TOKEN:
+    raise ValueError("GITHUB_TOKEN is not set . please recheck your .env file")
 REPO_NAME = "TaliaGeo/ci-cd-sourceRepo"
 BRANCH_NAME = "master"
 CHECK_INTERVAL = 3
 
-g = Github(GITHUB_TOKEN)
+auth = Auth.Token(GITHUB_TOKEN)
+g = Github(auth=auth)
 repo = g.get_repo(REPO_NAME)
 lates_commit = repo.get_branch(BRANCH_NAME).commit.sha
 
@@ -26,4 +29,4 @@ while True:
         lates_commit = latest_commit
     else:
         print("No new commits detected.")
-     //heloo
+     
