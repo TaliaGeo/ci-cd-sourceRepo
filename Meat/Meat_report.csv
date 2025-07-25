@@ -1,0 +1,15 @@
+ItemID,ItemType,ItemName,Quantity,Price
+1,Meat,Chicken,15,10.5 
+3,Meat,Beef,20,12 
+7,Meat,Lamb,7,14 
+12,Meat,Turkey,13,11.5 
+15,Meat,Duck,8,13 
+18,Meat,Venison,5,15 
+22,Meat,Rabbit,6,14.5 
+26,Meat,Fish,18,10 
+30,Meat,Shrimp,12,13.5 
+34,Meat,Salmon,14,12 
+38,Meat,Tuna,11,10.8 
+42,Meat,Crab,10,14 
+46,Meat,Oyster,8,13.5 
+50,Meat,Clams,10,12
