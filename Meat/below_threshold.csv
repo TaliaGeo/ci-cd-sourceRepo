@@ -1,5 +1,6 @@
 ItemID,ItemType,ItemName,Quantity,Price
 1,Meat,Chicken,15,10.5 
+3,Meat,Beef,20,12 
 7,Meat,Lamb,7,14 
 12,Meat,Turkey,13,11.5 
 15,Meat,Duck,8,13 

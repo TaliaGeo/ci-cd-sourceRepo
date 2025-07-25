@@ -6,7 +6,5 @@ ItemID,ItemType,ItemName,Quantity,Price
 24,Drink,Tea,38,3.8 
 28,Drink,Milk,50,2 
 32,Drink,Cocoa,40,5 
-36,Drink,Apple Cider,25,4 
-40,Drink,Orange Juice,28,3 
 44,Drink,Smoothie,45,3.5 
 48,Drink,Pomegranate Juice,30,4 
