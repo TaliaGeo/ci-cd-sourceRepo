@@ -1,8 +1,9 @@
 from github import Github
 import time 
 import subprocess
+import os
 
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = os.getwnv("GITHUB_TOKEN")
 
 REPO_NAME = "TaliaGeo/ci-cd-sourceRepo"
 BRANCH_NAME = "master"
