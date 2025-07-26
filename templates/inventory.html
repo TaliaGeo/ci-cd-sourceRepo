@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #ff4444;
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        form {
+            margin-bottom: 1em;
+            color: #ff6666;
+        }
+        label {
+            margin-right: 0.5em;
+        }
+        select {
+            background-color: #222;
+            color: #ff4444;
+            border: 1px solid #ff4444;
+            padding: 0.3em 0.6em;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 900px;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 10px #ff4444;
+        }
+        th, td {
+            border: 1px solid #ff4444;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #330000;
+        }
+        tr:nth-child(even) {
+            background-color: #1a0000;
+        }
+        a {
+            color: #ff4444;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+        p {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <h2>This month Threshold is {{ THRESHOLD }}</h2>
+
+    {% if categories %}
+    <form method="get">
+        <label for="category">Filter by Item Type:</label>
+        <select name="category" onchange="this.form.submit()">
+            <option value="">-- All Categories --</option>
+            {% for category in categories %}
+                <option value="{{ category }}" {% if category == selected_category %}selected{% endif %}>{{ category }}</option>
+            {% endfor %}
+        </select>
+    </form>
+    {% endif %}
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item ID</th>
+                <th>Item Type</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item['ItemID'] }}</td>
+                <td>{{ item['ItemType'] }}</td>
+                <td>{{ item['ItemName'] }}</td>
+                <td>{{ item['Quantity'] }}</td>
+                <td>{{ item['Price'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>

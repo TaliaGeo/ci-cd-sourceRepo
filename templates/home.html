@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Talia's Restaurant Inventory</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #ff4444;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.2em;
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 1.5em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        ul li a {
+            color: #ff4444;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        ul li a:hover {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Talia's Restaurant Inventory</h1>
+    <h2>This month Threshold is {{ THRESHOLD }}</h2>
+    <ul>
+        <li><a href='/inventory'>View Full Inventory</a></li>
+        <li><a href='/below'>Items Below Threshold</a></li>
+        <li><a href='/above'>Items Above Threshold</a></li>
+    </ul>
+</body>
+</html>
