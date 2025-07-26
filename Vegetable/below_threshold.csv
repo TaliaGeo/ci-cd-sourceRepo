@@ -4,8 +4,11 @@ ItemID,ItemType,ItemName,Quantity,Price
 8,Vegetable,Spinach,25,3 
 13,Vegetable,Cauliflower,9,2.7 
 17,Vegetable,Peas,12,2.2 
+21,Vegetable,Potato,35,2 
 25,Vegetable,Onion,28,1.8 
+29,Vegetable,Tomato,32,2.5 
 33,Vegetable,Pepper,20,2.7 
 37,Vegetable,Brussels Sprouts,15,2.9 
 41,Vegetable,Asparagus,14,3.5 
+45,Vegetable,Cucumber,30,2 
 49,Vegetable,Zucchini,25,2.5 

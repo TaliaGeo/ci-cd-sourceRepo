@@ -3,8 +3,6 @@ ItemID,ItemType,ItemName,Quantity,Price
 11,Drink,Water,50,1 
 16,Drink,Soda,45,2.5 
 20,Drink,Coffee,42,4.5 
-24,Drink,Tea,38,3.8 
 28,Drink,Milk,50,2 
 32,Drink,Cocoa,40,5 
 44,Drink,Smoothie,45,3.5 
-48,Drink,Pomegranate Juice,30,4 
