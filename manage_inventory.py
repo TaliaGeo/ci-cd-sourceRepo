@@ -1,7 +1,7 @@
 import csv
 import os
 
-threshold = 35
+threshold = 39
 
 with open("inventory.csv", "r") as file:
     reader = csv.DictReader(file)
