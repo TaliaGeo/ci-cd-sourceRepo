@@ -26,6 +26,7 @@ while True:
     if latest_commit != lates_commit:
         print(f"New commit detected: {latest_commit}")
         subprocess.run(["bash", "sourcephase.sh"])
+        subprocess.run(["bash", "buildphase.sh"])
         lates_commit = latest_commit
     else:
         print("No new commits detected.")
