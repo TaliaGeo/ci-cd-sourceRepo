@@ -16,18 +16,18 @@ CHECK_INTERVAL = 3
 auth = Auth.Token(GITHUB_TOKEN)
 g = Github(auth=auth)
 repo = g.get_repo(REPO_NAME)
-lates_commit = repo.get_branch(BRANCH_NAME).commit.sha
+old_commit = repo.get_branch(BRANCH_NAME).commit.sha
 
 print(f"Latest commit on {BRANCH_NAME} branch: {lates_commit}")
 
 while True:
     time.sleep(CHECK_INTERVAL)
-    latest_commit = repo.get_branch(BRANCH_NAME).commit.sha
-    if latest_commit != lates_commit:
-        print(f"New commit detected: {latest_commit}")
+    new_commit = repo.get_branch(BRANCH_NAME).commit.sha
+    if new_commit != old_commit:
+        print(f"New commit detected: {new_commit}")
         subprocess.run(["bash", "sourcephase.sh"])
         subprocess.run(["bash", "buildphase.sh"])
-        lates_commit = latest_commit
+        old_commit = new_commit
     else:
         print("No new commits detected.")
      
