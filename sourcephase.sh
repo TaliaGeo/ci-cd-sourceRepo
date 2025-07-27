@@ -6,7 +6,6 @@ CLONE_DIR="temprory-sourceRepo"
 if [ -d "$CLONE_DIR" ]; then
   echo "Removing old clone directory..."
   rm -rf "$CLONE_DIR"
-  sleep 2
 fi
 
 

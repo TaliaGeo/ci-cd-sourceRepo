@@ -2,7 +2,6 @@ import csv
 import os
 
 threshold = 35
-
 with open("inventory.csv", "r") as file:
     reader = csv.DictReader(file)
     data = list(reader)
