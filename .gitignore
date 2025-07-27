@@ -1,5 +1,7 @@
 .env
 get-pip.py
 temprory-sourceRepo/
-Vegetables/
-Drinks/
+Vegetable/
+Drink/
+Meat/
+Spice/
