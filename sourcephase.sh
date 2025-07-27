@@ -13,4 +13,4 @@ fi
 echo "Cloning repository..."
 git clone "$REPO_URL" "$CLONE_DIR"
  
- python3 manage_inventory.py
+ 
