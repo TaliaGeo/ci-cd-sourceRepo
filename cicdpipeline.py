@@ -27,10 +27,7 @@ while True:
         print(f"New commit detected: {new_commit}")
        subprocess.run(["bash", "sourcephase.sh"], check=True)
        subprocess.run(["bash", "buildphase.sh"] , check=True)
-       try:
-       subprocess.run(["bash", "sourcephase.sh"], check=True)
-       except subprocess.CalledProcessError as e:
-       print(f"sourcephase.sh failed with error: {e}")
+       subprocess.run(["bash", "deployphase.sh"], check=True)
         old_commit = new_commit
     else:
         print("No new commits detected.")
