@@ -18,7 +18,7 @@ g = Github(auth=auth)
 repo = g.get_repo(REPO_NAME)
 old_commit = repo.get_branch(BRANCH_NAME).commit.sha
 
-print(f"Latest commit on {BRANCH_NAME} branch: {lates_commit}")
+print(f"Latest commit on {BRANCH_NAME} branch: {old_commit}")
 
 while True:
     time.sleep(CHECK_INTERVAL)
