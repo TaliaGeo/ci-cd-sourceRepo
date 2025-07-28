@@ -12,6 +12,5 @@ fi
 
 echo "Cloning repository..."
 git clone "$REPO_URL" "$CLONE_DIR"
- 
- pwd
-ls -l
+cd "$CLONE_DIR" || exit 1
+
