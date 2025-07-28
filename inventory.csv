@@ -11,7 +11,7 @@ ItemID,ItemType,ItemName,Quantity,Price
 10,Drink,Juice,40,3.5 
 11,Drink,Water,50,1 
 12,Meat,Turkey,13,11.5 
-13,Vegetable,Cauliflower,9,2.7 
+13,Vegetable,Cauliflower,9,2.9
 14,Spice,Oregano,6,1.4 
 15,Meat,Duck,8,13 
 16,Drink,Soda,45,2.5 
