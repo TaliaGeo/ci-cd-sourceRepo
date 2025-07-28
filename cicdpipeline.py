@@ -12,7 +12,6 @@ if not GITHUB_TOKEN:
 REPO_NAME = "TaliaGeo/ci-cd-sourceRepo"
 BRANCH_NAME = "master"
 CHECK_INTERVAL = 3
-
 auth = Auth.Token(GITHUB_TOKEN)
 g = Github(auth=auth)
 repo = g.get_repo(REPO_NAME)
@@ -27,7 +26,8 @@ while True:
         print(f"New commit detected: {new_commit}")
        subprocess.run(["bash", "sourcephase.sh"], check=True)
        subprocess.run(["bash", "buildphase.sh"] , check=True)
-       subprocess.run(["bash", "deployphase.sh"], check=True)
+       subprocess.run(["bash", "deployphase.sh"] , check=True)
+       
         old_commit = new_commit
     else:
         print("No new commits detected.")
