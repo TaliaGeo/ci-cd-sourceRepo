@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-Run python manage_inventory.py
+Run python3.11 manage_inventory.py
 
 COPY app.py .
 COPY manage_inventory.py .
