@@ -25,5 +25,6 @@ COPY templates/ ./templates/
 
 EXPOSE 8080
 
-CMD ["sh", "-c", "python manage_inventory.py && python app.py"]
-CMD ["python", "app.py"]    
+CMD ["python", "manage_inventory.py"]
+CMD ["python", "app.py"]
+
