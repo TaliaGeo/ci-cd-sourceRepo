@@ -2,7 +2,7 @@
 
 REPO_URL="https://github.com/TaliaGeo/ci-cd-sourceRepo.git"
 CLONE_DIR="temprory-sourceRepo"
-echo $PWD
+
 
 if [ -d "$CLONE_DIR" ]; then
   echo "Removing old clone directory..."
@@ -13,4 +13,5 @@ fi
 echo "Cloning repository..."
 git clone "$REPO_URL" "$CLONE_DIR"
  
- 
+ pwd
+ls -l

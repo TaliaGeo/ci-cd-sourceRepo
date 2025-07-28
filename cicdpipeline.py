@@ -27,6 +27,7 @@ while True:
         print(f"New commit detected: {new_commit}")
         subprocess.run(["bash", "sourcephase.sh"])
         subprocess.run(["bash", "buildphase.sh"])
+        subprocess.run(["bash", "deployphase.sh"])
         old_commit = new_commit
     else:
         print("No new commits detected.")
