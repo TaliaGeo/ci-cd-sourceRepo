@@ -1,4 +1,6 @@
 #!/bin/bash
+CONTAINER_NAME="inventory-container"
+IMAGE_NAME="restaurant-inventory-pipeline-image"
 echo "starting build phase..."
 IMAGE_NAME="restaurant-inventory-pipeline-image"
 VERSION_TAG=$(date +%Y%m%d-%H%M)
