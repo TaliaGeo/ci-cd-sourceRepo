@@ -25,8 +25,8 @@ while True:
     new_commit = repo.get_branch(BRANCH_NAME).commit.sha
     if new_commit != old_commit:
         print(f"New commit detected: {new_commit}")
-       subprocess.run(["bash", "sourcephase.sh"])
-       subprocess.run(["bash", "buildphase.sh"])
+       subprocess.run(["bash", "sourcephase.sh"], check=True)
+       subprocess.run(["bash", "buildphase.sh"] , check=True)
        try:
        subprocess.run(["bash", "sourcephase.sh"], check=True)
        except subprocess.CalledProcessError as e:
