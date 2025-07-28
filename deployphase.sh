@@ -6,7 +6,6 @@ IMAGE_NAME="restaurant-inventory-pipeline-image"
 if [ "$(docker ps -a -q -f name=$CONTAINER_NAME)" ]; then
     echo "Stopping and removing existing container..."
     docker stop $CONTAINER_NAME
-    sleep 5
     docker rm $CONTAINER_NAME
 else
     echo "No existing container found."
