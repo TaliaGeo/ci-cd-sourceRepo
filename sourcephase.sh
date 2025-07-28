@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 REPO_URL="https://github.com/TaliaGeo/ci-cd-sourceRepo.git"
-CLONE_DIR="temprory-sourceRepo"
+CLONE_DIR="temprory-sourceRepo $(date +%s)"
 
 echo " Current directory: $PWD"
 if [ -d "$CLONE_DIR" ]; then
